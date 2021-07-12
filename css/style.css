@@ -23,6 +23,44 @@ main {
     color: #562eff;
     margin-top: 0;
 }
+/* Header style */
+header {
+    background-color: #562eff;
+    display: flex;
+    justify-content: center;
+}
+nav {
+    width: 930px;
+    display: flex;
+    justify-content: space-between;
+}
+.brand {
+    display: flex;
+    align-items: center;
+}
+.brand-logo {
+    width: 40.42px;
+    height: 51px;
+}
+.brand-name {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 16px;
+}
+.navbar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.navbar .nav-item {
+    padding: 0 18px;
+}
+.navbar .nav-item .nav-link {
+    text-decoration: none;
+    color: #fff;
+}
+
 /* Start Top Players Style */
 .players {
     display: grid;
@@ -143,6 +181,12 @@ hr {
 
 /* tablate device style */
 @media only screen and (min-width: 689px) and (max-width: 992px) {
+    nav {
+        width: 100%;
+    }
+    .brand {
+        padding: 0 10px;
+    }
     .container {
         width: 100%;
         padding: 30px 0;
@@ -162,6 +206,31 @@ hr {
 }
 /* mobile device style */
 @media only screen and (max-width: 688px) {
+    nav {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .brand-logo {
+        width: 30px;
+        height: 40px;
+        margin-left: 10px;
+    }
+    .brand-name {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .navbar .nav-item {
+        padding: 0 10px;
+    }
+    .navbar:nth-last-child(1) {
+        padding-right: 0;
+    }
+    .navbar .nav-item .nav-link {
+        font-size: 14px;
+        text-decoration: none;
+        color: #fff;
+    }
     .container {
         width: 100%;
         padding: 30px 0;
