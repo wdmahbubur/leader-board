@@ -7,7 +7,8 @@ body {
 }
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .container {
     width: 870px;
@@ -22,7 +23,7 @@ main {
     color: #562eff;
     margin-top: 0;
 }
-/* Top Players Style */
+/* Start Top Players Style */
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -45,7 +46,8 @@ hr {
     border: 1px solid #d1d1d1;
     margin: 30px 0;
 }
-/* Top Blogs style */
+/* End Top Players Style */
+/* Start Top Blogs style */
 .blogs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -76,4 +78,63 @@ hr {
 .blog-author a {
     text-decoration: none;
     color: #562eff;
+}
+/* End Top Blogs style */
+/* Start Top Courses style */
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+.course {
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+}
+.course img {
+    width: 100%;
+    height: 104px;
+}
+.course .course-details .course-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+.course .course-details .course-author {
+    font-size: 15px;
+    font-weight: normal;
+    color: #ed6b4f;
+    margin: 7px 0;
+}
+.course .course-details .course-info {
+    display: flex;
+    justify-content: space-between;
+}
+.course .course-details .course-info .rating i {
+    font-size: 12px;
+}
+.course .course-details .course-info .rating i.filled {
+    color: #ffc014;
+}
+.course .course-details .course-info .rating i.empty {
+    color: #aeaeae;
+    opacity: 0.25;
+}
+.course .course-details .course-info .rating span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #a2a2a2;
+}
+.course .course-details .course-info .course-duration {
+    background-color: #ffe4e8;
+    border-radius: 15px;
+    padding: 4px 6px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #ff4a60;
+}
+.course .course-details .course-info .course-duration span {
+    margin-left: 5px;
 }
