@@ -64,7 +64,7 @@ hr {
 .blog-info {
     margin-left: 16px;
 }
-.blog-info h3 {
+.blog-info .blog-title {
     font-size: 20px;
     font-weight: 500;
     margin: 0;
@@ -137,4 +137,55 @@ hr {
 }
 .course .course-details .course-info .course-duration span {
     margin-left: 5px;
+}
+
+/* End Top Courses style */
+
+/* tablate device style */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .container {
+        width: 100%;
+        padding: 30px 0;
+    }
+    .section-title {
+        margin-left: 10px;
+    }
+    .players,
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 10px;
+    }
+    .blog-info .blog-title,
+    .course .course-details .course-title {
+        font-size: 18px;
+    }
+}
+/* mobile device style */
+@media only screen and (max-width: 688px) {
+    .container {
+        width: 100%;
+        padding: 30px 0;
+    }
+    .section-title {
+        margin-left: 6px;
+    }
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 6px;
+    }
+    .players .player h3 {
+        font-size: 15px;
+        margin-left: 8px;
+    }
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 6px;
+    }
+    .courses .course {
+        margin-bottom: 8px;
+    }
+    .courses .course img {
+        height: 150px;
+    }
 }
